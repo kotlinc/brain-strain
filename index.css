@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+h1, h2, h3, b, input, li {
+  font-family: "DM Mono", system-ui, sans-serif;
+  color: #02003E;
+  text-decoration: none;
+  list-style: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48;
+}
+
+input {
+  background-color: #02003E;
+  color: #B5B3FF;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+body {
+  background-color: #B5B3FF;
+}
