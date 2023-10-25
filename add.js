@@ -1,5 +1,9 @@
 const questionsPlus = []
 
+const saveProgressAdd = () => {
+  localStorage.setItem('additionlvl')
+}
+
 const generateQuestionsPlus = (times, max) => {
 	for (let i = 0; i < times; i++) {
   	const question = questionsPlus.length + 1
@@ -25,7 +29,7 @@ const addQuestionsPlus = () => {
     	if (el.val() == a && n !== questionsPlus.length) {
       	$(`#question${n}-add`).html(`<b>${n}</b>: Correct!`)
         $(`#question${n + 1}-add`).show()
-        $(`#question${n + 1}-ans-add`).focus()
+        $(`#question${n + 1}-ans-add`).triiger('focus')
       } else if (el.val() == a && n === questionsPlus.length) {
       	const lvl = $('#lvl-add')
         const lvln = Number(lvl.text())

@@ -32,7 +32,7 @@ const addQuestionsMinus = () => {
     	if (el.val() == a && n !== questionsMinus.length) {
       	$(`#question${n}-sub`).html(`<b>${n}</b>: Correct!`)
         $(`#question${n + 1}-sub`).show()
-        $(`#question${n + 1}-ans-sub`).focus()
+        $(`#question${n + 1}-ans-sub`).trigger('focus')
       } else if (el.val() == a && n === questionsMinus.length) {
       	const lvl = $('#lvl-sub')
         const lvln = Number(lvl.text())
