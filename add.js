@@ -29,7 +29,7 @@ const addQuestionsPlus = () => {
     	if (el.val() == a && n !== questionsPlus.length) {
       	$(`#question${n}-add`).html(`<b>${n}</b>: Correct!`)
         $(`#question${n + 1}-add`).show()
-        $(`#question${n + 1}-ans-add`).triiger('focus')
+        $(`#question${n + 1}-ans-add`).tigger('focus')
       } else if (el.val() == a && n === questionsPlus.length) {
       	const lvl = $('#lvl-add')
         const lvln = Number(lvl.text())
